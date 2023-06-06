@@ -2,9 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+#video{
+  position: fixed;
+  /* opacity: .9; */
+  z-index: -1;
+  width:100%;
+}
+
+
+
+
+
 body {
+  z-index: 2;
   font-family: sans-serif;
-  background-color: rgb(12, 6, 86);
+  /* background-color: rgb(12, 6, 86); */
   height: 100vh;
   color: azure;
 }

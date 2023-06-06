@@ -17,7 +17,9 @@ const Navbar = () => {
 
   return (
     <div >
-      <h1>MalcMind<span>- Software,SEO,AI</span></h1>
+            {/* <video autoplay muted loop id="video">
+                <source src={"NavVid.mp4"} type="video/mp4"/>
+              </video> */}
       <nav>
         {isLoggedIn ? (
           <div>
@@ -28,10 +30,16 @@ const Navbar = () => {
             </button>
           </div>
         ) : (
-          <div>
+          <div className='flex justify-between items-center'>
+            
+
             {/* The navbar will show these links before you log in */}
+            <div className='text-5xl '><Link to="/"><h1>MalcMind</h1></Link></div>
+            <div className='text-2xl'>
+            <Link to="/">Home</Link>
             <Link to="/login">Login</Link>
             <Link to="/signup">Sign Up</Link>
+            </div>
           </div>
         )}
 
