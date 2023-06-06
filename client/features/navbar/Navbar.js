@@ -2,6 +2,9 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { logout } from '../../app/store';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 
 const Navbar = () => {
   const isLoggedIn = useSelector((state) => !!state.auth.me.id);
@@ -13,8 +16,8 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <h1>FS-App-Template</h1>
+    <div >
+      <h1>MalcMind<span>- Software,SEO,AI</span></h1>
       <nav>
         {isLoggedIn ? (
           <div>
@@ -31,6 +34,7 @@ const Navbar = () => {
             <Link to="/signup">Sign Up</Link>
           </div>
         )}
+
       </nav>
       <hr />
     </div>

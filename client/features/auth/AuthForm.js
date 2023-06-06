@@ -1,7 +1,9 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { authenticate } from '../../app/store';
-
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 /**
   The AuthForm component can be used for Login or Sign Up.
   Props for Login: name="login", displayName="Login"
@@ -40,6 +42,12 @@ const AuthForm = ({ name, displayName }) => {
         </div>
         {error && <div> {error} </div>}
       </form>
+      <React.Fragment>
+      <Container maxWidth="lg">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iste debitis accusamus aliquid, iusto neque commodi obcaecati totam ex culpa nisi quae molestiae corrupti quis modi accusantium voluptate libero est.
+        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
+      </Container>
+    </React.Fragment>
     </div>
   );
 };
