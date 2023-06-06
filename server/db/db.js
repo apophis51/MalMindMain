@@ -21,5 +21,5 @@ if(process.env.DATABASE_URL){
 }
 
 const db = new Sequelize(
-  process.env.DATABASE_URL || `postgres://localhost:5432/${databaseName}`, config)
+  "postgresql://postgres:s3tVJO1ShNNNdiZyBtLq@containers-us-west-55.railway.app:6736/railway" || `postgres://localhost:5432/${databaseName}`, config)
 module.exports = db
