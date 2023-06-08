@@ -11,6 +11,8 @@ const NewHome = (props) => {
   const [scrollCount, setScrollCount] = useState(1);
   const [increment, setincrement] = useState(5);
   const [indexCount, setIndexCount] = useState(0);
+  const [visibility, setVisibility] = useState('visible text-9xl ');
+  const [background, setBackground] = useState('');
   const [cssVis, setcssVis] = useState('text-7xl fixed invisible');
   const threshold = 10; // Set the threshold for scroll count
   const navigate = useNavigate ();
@@ -30,6 +32,8 @@ const NewHome = (props) => {
   ' A Dark Art ...',
   'Very Dark',
   'Very Dark ...',
+  'Very Very Dark',
+  'Very Very Dark ...',
    'And Javascript',
    'And Javascript...',
    'And Javascript...',
@@ -86,16 +90,23 @@ const NewHome = (props) => {
       navigate('/second');
       window.location.reload();
       setIndexCount(25)
-
+    }
+    if (indexCount > 13)  {
+      setBackground('visible fixed top-0 left-0 bg-black h-screen w-screen transition delay-150 duration-300 ease-in-out ...')
+      setVisibility('invisible')
+    }
+    if (indexCount > 15)  {
+      setBackground('')
     }
   }, [scrollCount]);
 
+
 let csseffects = 'text-7xl fixed visible'
   return (
-    <div className="fixefd">
+    <div className={background}>
       <br />
-      <h1>Scroll Count: {scrollCount}</h1>
-      <h1 className='text-9xl'>WebDesign</h1>
+      {/* <h1>Scroll Count: {scrollCount}</h1> */}
+      <h1 className={visibility}>WebDesign</h1>
       <h1 className={cssVis}>{textlist[indexCount]}</h1>
       <div className=" justify-center flex wrap animate-custom ">
         <svg className="pt-custom ..."><ArrowCircleDownIcon /></svg>
