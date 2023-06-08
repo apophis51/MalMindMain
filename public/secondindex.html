@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1.0'>
+    <title>MalcMind</title>
+    <link rel="stylesheet" href="/output.css" />
+    <script defer src="/bundle.js"></script>
+    <style>
+      .message {
+        display: none;
+        /* Add your styling for the message */
+      }
+
+      @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+  body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .fw-7 {font-weight: 700;}
+  .fw-4 {font-weight: 400;}
+  main {width: 720px;border-radius: 8px;box-shadow: 0px 0px 18px 1px #0800001c;}
+  .panel {display: flex;flex-direction: column;width: 100%;}
+  .panel .panel-header {width: 100%;display: flex;flex-direction: column;padding: 40px 50px;background: white;border-radius: 8px 8px 0px 0px;box-sizing: border-box;}
+  .panel .panel-header h3 {color: hsl(179, 62%, 43%);font-size: 26px;margin: 0px;}
+  .panel .panel-header h4 {margin: 25px 0px 0px 0px;color: hsl(71, 73%, 54%);font-size: 19px;}
+  .panel .panel-header .panel-text {margin-top: 20px;display: flex;flex-direction: column;row-gap: 7px;color: hsl(218, 22%, 67%);}
+  .panel .panel-header .panel-text p {margin: 0px; line-height: 26px;}
+  .panel .panel-body {width: 100%;border-radius: 0px 0px 8px 8px;display: flex;flex-direction: row;box-sizing: border-box;}
+  .panel .panel-body .panel-left {width: 50%;padding: 40px 50px;display: flex;flex-direction: column;justify-content: center;background:hsl(179, 62%, 43%);border-radius: 0px 0px 0px 8px;box-sizing: border-box;}
+  .panel .panel-body .panel-left span.span1 {font-size: 35px;display: inline-block;color: white;}
+  .panel .panel-body .panel-left span.span2 {font-size: 20px;display: inline-block;color: #ffffff94;}
+  .panel .panel-body .panel-left h3 {color: white;font-size: 19px;margin: 0px;}
+  .panel .panel-body .panel-left p {color: #ffffff8c;display: flex;flex-direction: row;column-gap: 14px;align-items: center;margin-bottom: 0px;}
+  .panel .panel-body .panel-left h4 {color: #ffffff94;display: flex;flex-direction: row;column-gap: 6px;align-items: center;margin-top: 0;}
+  .panel .panel-body .panel-left button {height: 50px;border-radius: 8px;border: 0;outline: none;color: white;background: hsl(71, 73%, 54%);font-size: 16px;box-shadow: 0px 1px 10px 1px #08000036;}
+  .panel .panel-body .panel-right {width: 50%;padding: 40px 50px;background:hsl(179deg 62% 43% / 83%);border-radius: 0px 0px 8px 0px;box-sizing: border-box;}
+  .panel .panel-body .panel-right h3 {color: white;font-size: 19px;margin: 0px;}
+  .panel .panel-body .panel-right .panel-text {color: #ffffff94;margin-top: 20px;}
+  .panel .panel-body .panel-right .panel-text p {margin: 2px 0px;font-size: 15px;}
+  @media only screen and (max-width: 675px) {
+    body {
+      height: 100%;
+        margin: 60px auto;
+    }
+    main {
+      width: 310px;
+      margin: 0px auto;
+    }
+    .panel .panel-header {
+      padding: 30px 25px;
+    }
+    .panel .panel-body {
+      flex-direction: column;
+    }
+    .panel .panel-body .panel-left {
+      width: 100%;
+      border-radius: 0px;
+      padding: 30px 25px;
+    }
+    .panel .panel-body .panel-right {
+      width: 100%;
+      border-radius: 0px 0px 8px 8px;
+      padding: 30px 25px;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <div id="messageBox" class="message">
+      <!-- Content of the message -->
+      
+
+      <main>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h3 class="fw-7">Join our community</h3>
+            <h4 class="fw-4">30-day, hassle-free money back guarantee</h4>
+            <div class="fw-4 panel-text">
+              <p class="">Do you need a site Designed</p>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="panel-left">
+              <h3 class="fw-7">3 Pages</h3>
+              <p class="fw-4"><span class="span1">$1000</span> Designed with React</p>
+              <h4 class="fw-4">Full access for less than <span class="span2">$1</span> a day</h4>
+              <button class="fw-7">Sign Up</button>
+            </div>
+            <div class="panel-right">
+              <h3>Why Us</h3>
+              <div class="panel-text">
+                <p>Fast Load Times</p>
+                <p>Peer &amp; expert code review</p>
+                <p>TailwindCSS</p>
+                <p>MoneyBack Guarantee</p>
+                <p>Fast Delivery</p>
+                <p>US Based</p>
+                <p>Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </main>
+     
+
+
+
+
+
+
+
+    </div>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          var messageBox = document.getElementById('messageBox');
+          messageBox.style.display = 'block';
+        }, 8000); // 3 seconds
+      });
+    </script>
+    <video className=""autoplay muted loop id="video">
+      <source src="React.mp4" type="video/mp4"/>
+    </video>
+    <h1>REACT</h1>
+  </body>
+</html>
+

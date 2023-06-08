@@ -7,6 +7,9 @@ import Container from '@mui/material/Container';
 const App = () => {
   return (
     <div>
+    {/* <video className=""autoPlay muted loop id="video">
+      <source src="NavVid.mp4" type="video/mp4"/>
+    </video> */}
       <React.Fragment>
       <Container maxWidth="lg">
       <Navbar />
