@@ -10,6 +10,17 @@
   width:100%;
 }
 
+@media (max-width: 1300px) {
+  #video {
+    display: none;
+    background-color: black;
+  }
+}
+@media (max-width: 1300px) {
+  body {
+    background-color: black;
+  }
+}
 
 
 @keyframes bounce {
