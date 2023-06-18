@@ -34,8 +34,11 @@
     "compression": "^1.7.4",
     "daisyui": "^3.0.3",
     "express": "^4.18.2",
+    "framer": "^2.3.0",
     "jsonwebtoken": "^8.5.1",
+    "million": "^2.4.6-beta.2",
     "morgan": "^1.10.0",
+    "motion": "^10.16.2",
     "pg": "^8.8.0",
     "sequelize": "^6.25.3",
     "three": "^0.153.0"
