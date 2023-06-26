@@ -5,6 +5,9 @@ import AuthForm from '../features/auth/AuthForm';
 import Home from '../features/home/Home';
 import { me } from './store';
 import NewHome from '../features/home/NewHome';
+import { renderThree } from '../features/ThreeExample.js/secondThreejsModel.js';
+import { Box } from '../features/ThreeExample.js/firstThreejsModel.js';
+
 
 /**
  * COMPONENT
@@ -31,6 +34,7 @@ const AppRoutes = () => {
           <Route path="/*" element={<NewHome/>}/>
           <Route path="/login" element={<AuthForm name="login" displayName="Login" />}/>
           <Route path="/signup"element={<AuthForm name="signup" displayName="Sign Up" />} />
+          <Route path="/render"element={<renderThree/>} />
         </Routes>
       )}
     </div>
