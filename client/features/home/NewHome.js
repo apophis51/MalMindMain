@@ -44,7 +44,7 @@ let csseffects = 'text-7xl fixed visible'
       <br />
     
       <h1 >WebDesign</h1>
- <h1 className="text-5xl">Get Sites That Are Beautifully Designed</h1>
+ <h1 className="text-5xl">Get Sites That Are Beautifully Designed.</h1>
 
 <div className='bg-white opacity-75 '>
 <div><img className="opacsity-90 scale-75" src="website.png"></img></div></div>

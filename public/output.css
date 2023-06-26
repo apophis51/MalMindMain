@@ -755,11 +755,6 @@ html {
   .btn[disabled],
   .btn:disabled {
   pointer-events: none;
-  --tw-border-opacity: 0;
-  background-color: hsl(var(--n) / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.2;
-  color: hsl(var(--bc) / var(--tw-text-opacity));
-  --tw-text-opacity: 0.2;
 }
 
 .btn-group > input[type="radio"].btn {
@@ -896,6 +891,16 @@ html {
 .btn.glass.btn-active {
   --glass-opacity: 25%;
   --glass-border-opacity: 15%;
+}
+
+.btn.btn-disabled,
+  .btn[disabled],
+  .btn:disabled {
+  --tw-border-opacity: 0;
+  background-color: hsl(var(--n) / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.2;
+  color: hsl(var(--bc) / var(--tw-text-opacity));
+  --tw-text-opacity: 0.2;
 }
 
 .btn-group > input[type="radio"]:checked.btn,
@@ -1042,9 +1047,15 @@ html {
   background-color: #0f0b25;
 }
 
+@keyframes modal-pop {
+  0% {
+    opacity: 0;
+  }
+}
+
 @keyframes progress-loading {
   50% {
-    left: 107%;
+    background-position-x: -115%;
   }
 }
 
@@ -1225,10 +1236,6 @@ html {
 
 .mr-2 {
   margin-right: 0.5rem;
-}
-
-.block {
-  display: block;
 }
 
 .flex {
@@ -1491,11 +1498,6 @@ html {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-green-500 {
